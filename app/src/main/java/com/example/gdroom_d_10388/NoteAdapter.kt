@@ -20,8 +20,7 @@ listener: OnAdapterListener) :
             LayoutInflater.from(parent.context).inflate(R.layout.adapter_note,parent, false)
         )
     }
-    override fun onBindViewHolder(holder: NoteViewHolder, position:
-    Int) {
+    override fun onBindViewHolder(holder: NoteViewHolder, position: Int) {
         val note = notes[position]
         holder.view.text_title.text = note.title
         holder.view.text_title.setOnClickListener{
